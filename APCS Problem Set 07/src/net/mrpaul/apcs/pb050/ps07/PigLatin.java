@@ -218,8 +218,14 @@ public class PigLatin {
 		sc.close();
 	}
 	
+	public static int nthInstance(int n, String sub, String line) {
+		int lastIndex = -1;
+		
+		return lastIndex;
+	}
+	
 	public static void main(String[] args) throws IOException {
-		textToPigLatin("text_to_latin");
+		System.out.println(nthInstance(2, "", "Paul|Paul|Paul"));
 	}
 
 }
