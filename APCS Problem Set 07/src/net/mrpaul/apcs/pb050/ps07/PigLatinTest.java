@@ -58,7 +58,7 @@ public class PigLatinTest {
 		word12 = null;
 		word13 = null;
 	}
-
+	//Test startOfFirstConsonantCluster method
 	@Test
 	public void testStartOfFirstConsonantCluster() {
 		assertEquals(1, PigLatin.startOfFirstConsonantCluster(word));
@@ -69,7 +69,7 @@ public class PigLatinTest {
 		assertEquals(-1, PigLatin.startOfFirstConsonantCluster(word7));
 
 	}
-	
+	//Test endOfFirstConsonantCluster method
 	@Test
 	public void testEndOfFirstConsonantCluster() {
 		word = "yield";
@@ -113,7 +113,7 @@ public class PigLatinTest {
 		assertEquals("Inboxway", PigLatin.wordToPigLatin(word13));
 	
 	}
-	
+	//test FindStartOfEndingPuncSeq method from PigLatin.java
 	@Test
 	public void testFindStartOfEndingPuncSeq() {
 		assertEquals(-1, PigLatin.findStartOfEndingPuncSeq("continent"));
