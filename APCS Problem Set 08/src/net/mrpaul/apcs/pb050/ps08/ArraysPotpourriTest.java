@@ -84,5 +84,13 @@ public class ArraysPotpourriTest {
 	public void testMode() {
 		
 	}
+	
+	@Test
+	public void testStdev() {
+		assertEquals(ArraysPotpourri.stdev(array1), 10.531, 0.05);
+		assertEquals(ArraysPotpourri.stdev(array2), 2.316, 0.2);
+		assertEquals(ArraysPotpourri.stdev(array4), 7.135, 0.1);
+	}
+	
 
 }
