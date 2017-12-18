@@ -102,4 +102,16 @@ public class ArraysPotpourri {
 		return Math.sqrt(sumDif/(array.length-1));
 	}
 	
+	public static boolean isUnique(int[] array) {
+		boolean unique = true;
+		for (int i = 0; i < array.length; i++) {
+		  for (int j = i+ 1; j < array.length; j++) {
+		    if (j != i && array[j] == array[i]) {
+		    	unique = false;
+		    }
+		  }
+		}
+		return unique;
+	}
+	
 }

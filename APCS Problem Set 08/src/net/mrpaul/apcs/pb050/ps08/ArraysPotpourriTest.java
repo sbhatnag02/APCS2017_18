@@ -92,5 +92,13 @@ public class ArraysPotpourriTest {
 		assertEquals(ArraysPotpourri.stdev(array4), 7.135, 0.1);
 	}
 	
+	@Test
+	public void testIsUnique() {
+		assertFalse(ArraysPotpourri.isUnique(array1));
+		assertTrue(ArraysPotpourri.isUnique(array2));
+		assertTrue(ArraysPotpourri.isUnique(array3));
+		assertTrue(ArraysPotpourri.isUnique(array4));
+	}
+	
 
 }
