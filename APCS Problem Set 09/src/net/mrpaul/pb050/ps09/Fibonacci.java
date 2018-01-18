@@ -35,10 +35,11 @@ public class Fibonacci {
 	}
 	
 	public static void main(String[] args) {
-		long nanoTime = System.nanoTime();
+		/*long nanoTime = System.nanoTime();
 		dynamicFibonacci(45);
 		nanoTime = System.nanoTime() - nanoTime;
 		System.out.println(nanoTime);
+		*/
 	}
 	
 }
