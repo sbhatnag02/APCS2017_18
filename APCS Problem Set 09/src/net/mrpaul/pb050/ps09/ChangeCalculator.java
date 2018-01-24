@@ -41,37 +41,19 @@ public class ChangeCalculator {
 			return 0;
 		}
 		else {
-			boolean matchesCoin = false;
 			for(int i = 0; i < coins.length; i++) {
-				if(coins[i] == n) {
-					matchesCoin = true;
+				if(n%coins[i] == 0 && n/coins[i] == 1) {
+					return 1;
 				}
 			}
-			for(int i = coins.length-1; i>=0; i--) {
-				if(n % coins[i] == 0 && i != 0) {
-					int numCoins = n/coins[i];
-					return numCoins;
-				}
-			}
+			return 0; //placeholder
 			
-			if(matchesCoin) {
-				return 1;
-			}else {
-				int numCoins = 0;
-				for(int i = coins.length-1; i >= 0; i--) {
-					while(n >= coins[i]) {
-						n -= coins[i];
-						numCoins++;
-					}
-				}
-				return numCoins;
-			}
 		}
 	}
 	
 	public static void main(String[] args) {
 		int[] coins = {1, 4, 6};
-		System.out.println(dynamicMinChange(5, coins));
+		System.out.println(dynamicMinChange(15, coins));
 	}
 
 }
