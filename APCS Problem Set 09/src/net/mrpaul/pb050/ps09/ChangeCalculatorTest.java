@@ -16,10 +16,6 @@ public class ChangeCalculatorTest {
 		coinSet1[0] = 1;
 		coinSet1[1] = 4;
 		coinSet1[2] = 6;
-		
-		coinSet2[0] = 1;
-		coinSet2[1] = 5;
-		coinSet2[2] = 10;
 	}
 
 	@After
@@ -33,6 +29,16 @@ public class ChangeCalculatorTest {
 		assertEquals(ChangeCalculator.recursiveMinChange(4, coinSet1), 1);
 		assertEquals(ChangeCalculator.recursiveMinChange(5, coinSet1), 2);
 		assertEquals(ChangeCalculator.recursiveMinChange(8, coinSet1), 2);
+	}
+	
+	@Test
+	public void testDynamicMinChange() {
+		//Coin set 1 -- Dynamic minChange
+		assertEquals(ChangeCalculator.dynamicMinChange(8, coinSet1), 2);
+		assertEquals(ChangeCalculator.dynamicMinChange(4, coinSet1), 1);
+		assertEquals(ChangeCalculator.dynamicMinChange(5, coinSet1), 2);
+		assertEquals(ChangeCalculator.dynamicMinChange(10, coinSet1), 2);
+
 	}
 
 }
