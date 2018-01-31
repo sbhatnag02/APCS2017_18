@@ -36,8 +36,9 @@ public class ChangeCalculatorTest {
 		//Coin set 1 -- Dynamic minChange
 		assertEquals(ChangeCalculator.dynamicMinChange(8, coinSet1), 2);
 		assertEquals(ChangeCalculator.dynamicMinChange(4, coinSet1), 1);
-		assertEquals(ChangeCalculator.dynamicMinChange(5, coinSet1), 2);
-		assertEquals(ChangeCalculator.dynamicMinChange(10, coinSet1), 2);
+		assertEquals(ChangeCalculator.dynamicMinChange(9, coinSet1), 3);
+		assertEquals(ChangeCalculator.dynamicMinChange(19, coinSet1), 4);
+		assertEquals(ChangeCalculator.dynamicMinChange(30, coinSet1), 5);
 
 	}
 

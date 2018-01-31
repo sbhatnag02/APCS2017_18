@@ -22,15 +22,17 @@ public class Fibonacci {
 	}
 	
 	public static int dynamicFibonacci(int n) {
+		//Create new array to hold fib numbers
 		int[] fib = new int[n + 1];
 		fib[0] = 0;
 		if(n > 0) {
 			fib[1] = 1;
+			//calculate fib numbers and store them within the array
 			for(int i = 2; i<fib.length; i++) {
 				fib[i] = fib[i-2] + fib[i-1];
 			}
 		}
-		
+		///Retrun the fib number the client called for
 		return fib[n];
 	}
 	
