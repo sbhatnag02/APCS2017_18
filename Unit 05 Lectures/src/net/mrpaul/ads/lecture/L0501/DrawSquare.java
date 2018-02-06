@@ -9,7 +9,7 @@ public class DrawSquare {
       // Instantiate a pen object
       StandardPen pen = new StandardPen();
       
-      // Lift the pen, move it to the square’s top left corner,
+      // Lift the pen, move it to the squareï¿½s top left corner,
       // and lower it again
       pen.up();
       pen.move(25);
