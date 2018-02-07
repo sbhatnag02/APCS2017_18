@@ -6,6 +6,7 @@ public class Rect implements Shape {
 
    private double xPos, yPos;
    private double height, width;
+   private final int sideCount = 4;
 
    public Rect() {
       xPos = 0;
@@ -51,6 +52,10 @@ public class Rect implements Shape {
    public void stretchBy (double factor) {
       height *= factor;
       width *= factor;
+   }
+   
+   public int getSideCount() {
+	   return sideCount;
    }
 
    public String toString() {

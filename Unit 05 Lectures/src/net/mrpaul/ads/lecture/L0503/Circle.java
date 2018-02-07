@@ -59,5 +59,9 @@ public class Circle implements Shape {
                  + "Area: " + area();
       return str;
    }
+
+	public int getSideCount() {
+		return 0;
+	}
 }
 
