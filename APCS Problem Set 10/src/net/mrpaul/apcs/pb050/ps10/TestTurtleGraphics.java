@@ -3,16 +3,15 @@ package net.mrpaul.apcs.pb050.ps10;
 import TurtleGraphics.Pen;
 import TurtleGraphics.SketchPadWindow;
 import TurtleGraphics.StandardPen;
+import TurtleGraphics.WiggleRainbowPen;
 
 public class TestTurtleGraphics {
 
 	public static void main(String[] args) {
 		
-		//Specify window
-		SketchPadWindow win = new SketchPadWindow(1920, 1080);
-		
 		//Pass window size into new standard pen
-		Pen p = new StandardPen(win);
+		SketchPadWindow win = new SketchPadWindow(1920, 1080);
+		Pen p = new WiggleRainbowPen(win);
 		
 		//Move to center
 		p.up();
@@ -22,15 +21,14 @@ public class TestTurtleGraphics {
 		int startingAngle2 = 150;
 		int startingAngle3 = -90;
 		
-		//Draw triangles
+		//Draw concentric triangles
 		p.setWidth(10);
-		for(int i = 0; i < 13; i++) {
-			drawTriangle(500, p, startingAngle1, startingAngle2, startingAngle3);
+		for(int i = 0; i < 12; i++) {
+			drawTriangle(250, p, startingAngle1, startingAngle2, startingAngle3);
 			startingAngle1+=30;
 			startingAngle2+=30;
 			startingAngle3+=30;
 		}
-		
 		
 		
 	}
