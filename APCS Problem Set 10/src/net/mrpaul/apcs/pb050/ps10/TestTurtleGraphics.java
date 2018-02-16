@@ -4,7 +4,11 @@ import TurtleGraphics.Pen;
 import TurtleGraphics.SketchPadWindow;
 import TurtleGraphics.StandardPen;
 import TurtleGraphics.WiggleRainbowPen;
-
+/**
+ * Draws a pattern using the Turtle Graphics jar
+ * @author 409351
+ *
+ */
 public class TestTurtleGraphics {
 
 	public static void main(String[] args) {

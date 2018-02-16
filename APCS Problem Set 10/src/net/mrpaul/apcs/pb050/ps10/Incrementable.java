@@ -1,5 +1,9 @@
 package net.mrpaul.apcs.pb050.ps10;
-
+/**
+ * Interface for Incrementable objects. Behaviors are to increment and return the value of the counter
+ * @author 409351
+ *
+ */
 public interface Incrementable {
 
 	/**
