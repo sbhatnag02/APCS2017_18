@@ -1,5 +1,6 @@
 package net.mrpaul.pb050.ps11;
 
+
 /*
 CLASS: Polygon
 DESCRIPTION: A polygon is a sequence of points in space defined by a set of
@@ -101,4 +102,16 @@ class Polygon {
     double area = findArea();
     return new Point(Math.abs(sum.x/(6*area)),Math.abs(sum.y/(6*area)));
   }
+  //Check if a polygon has collided with another polygon
+  public boolean collides(Polygon other) {
+	  Point[] otherPoints = other.getPoints();
+	  boolean collided = false;
+	  for(int i = 0; i < otherPoints.length; i++) {
+		  if(this.contains(otherPoints[i])) {
+			  collided = true;
+		  }
+	  }
+	  return collided;
+  }
+  
 }
